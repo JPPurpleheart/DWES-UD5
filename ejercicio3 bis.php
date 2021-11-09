@@ -20,7 +20,8 @@ if(isset($_SESSION['nombre'])) {
 echo $nombre . ' tiene ' . $edad . ' años';
 
 unset($_SESSION['nombre']);
-unset($_SESSION['edad']);
+
+session_unset();
 
 session_destroy();
 
